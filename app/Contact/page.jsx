@@ -38,8 +38,8 @@ export default function Form() {
             <Grid item xs={12} md={4}>
               <FormField label="Phone Number" />
             </Grid>
-            <Grid item xs={12}>
-              <FormField label="Leave a comment" />
+            <Grid item xs={12} md={12} sx={{ width: '100%' }}>
+              <FormField label="Leave a comment" sx={{ width: '86%' }} />
             </Grid>
           </Grid>
         </Box>
