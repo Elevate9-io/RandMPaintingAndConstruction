@@ -7,7 +7,6 @@ export default function Form() {
   return (
     <Box sx={{
       position: 'relative',
-      // backgroundImage: 'url("/R&M-Landingpage2.jpg")',
       backgroundImage: 'url("/images/background.jpg")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
