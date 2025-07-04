@@ -1,6 +1,5 @@
 
 import { Box, Typography, Container, TextField, Button, Grid } from '@mui/material';
-import Navbar from '../components/Navbar';
 
 export default function Form() {
   return (
@@ -10,7 +9,6 @@ export default function Form() {
       backgroundPosition: 'center',
       minHeight: '100vh',
     }}>
-      <Navbar />
       <Container sx={{ pt: 20, maxWidth: '800px' }}>
         <Typography variant="h3" fontWeight="bold" color="white" textAlign="center" mb={4}>
           Contact us to build our future
