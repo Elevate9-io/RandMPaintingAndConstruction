@@ -4,7 +4,7 @@ import { Box, Typography, Container } from '@mui/material';
 export default function Home() {
   return (
     <Box sx={{
-      backgroundImage: 'url("/R&M-Landingpage.jpg")',
+      backgroundImage: 'url("/images/background.jpg")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       minHeight: '100vh',
