@@ -10,9 +10,7 @@ const pages = ['Home', 'About', 'Form', 'Contact'];
 const Navbar = () => (
   <AppBar position="static" color="transparent" elevation={0}>
     <Toolbar sx={{ justifyContent: 'space-between', marginLeft: 48, marginRight: 38 }}>
-      <Typography variant="h2" sx={{ fontWeight: 'bold', color: '#747133' }}>
-        R&M
-      </Typography>
+      <Box component="img" src="/images/logo.png" alt="R&M Logo" sx={{ height: 64, margin: 2 }} />
       <Box sx={{ justifyContent: 'space-between', display: 'flex', width: '35%' }}>
         {pages.map((page) => (
           <Link key={page} href={`/${page.toLowerCase()}`} passHref>
