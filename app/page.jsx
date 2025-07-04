@@ -4,6 +4,7 @@ import { Box, Typography, Container } from '@mui/material';
 export default function Home() {
   return (
     <Box sx={{
+      position: 'relative',
       backgroundImage: 'url("/images/background.jpg")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
@@ -19,7 +20,7 @@ export default function Home() {
         zIndex: 1,
       },
     }}>
-      <Container sx={{ color: 'white', maxWidth: '600px', pt: 20, marginLeft: 40 }}>
+      <Container sx={{ color: 'white', maxWidth: '600px', pt: 20, marginLeft: 40, position: 'relative', zIndex: 2 }}>
         <Typography variant="h2" fontWeight="bold" sx={{ marginTop: 20, whiteSpace: 'pre-line' }}>
           {'Painting & remodeling \n with craftsmanship \n you can trust'}
         </Typography>
