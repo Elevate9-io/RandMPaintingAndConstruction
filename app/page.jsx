@@ -8,6 +8,16 @@ export default function Home() {
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       minHeight: '100vh',
+      '::before': {
+        content: '""',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        bgcolor: 'rgba(0,0,0,0.4)',
+        zIndex: 1,
+      },
     }}>
       <Container sx={{ color: 'white', maxWidth: '600px', pt: 20, marginLeft: 40 }}>
         <Typography variant="h2" fontWeight="bold" sx={{ marginTop: 20, whiteSpace: 'pre-line' }}>
