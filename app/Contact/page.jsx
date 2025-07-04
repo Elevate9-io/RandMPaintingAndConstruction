@@ -1,5 +1,7 @@
+import { Box, Typography, Button, Grid } from '@mui/material';
 
-import { Box, Typography, Container, TextField, Button, Grid } from '@mui/material';
+import FormField from 'components/FormField';
+
 
 export default function Form() {
   return (
@@ -9,30 +11,45 @@ export default function Form() {
       backgroundPosition: 'center',
       minHeight: '100vh',
     }}>
-      <Container sx={{ pt: 20, maxWidth: '800px' }}>
-        <Typography variant="h3" fontWeight="bold" color="white" textAlign="center" mb={4}>
-          Contact us to build our future
+      <Box sx={{ pt: 20, ml: 55, mr: 20 }}>
+        <Typography
+          variant="h2"
+          sx={{
+            fontWeight: 'bold',
+            color: 'white',
+            textAlign: 'center',
+            mt: 19,
+            mb: 4,
+            whiteSpace: 'pre-line'
+          }}
+        >
+          {`Contact us to \n`}
+          {`build your future`}
         </Typography>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={4}>
-            <TextField fullWidth label="Full Name" variant="outlined" InputProps={{ style: { backgroundColor: 'white' } }} />
+
+        <Box sx={{ width: '100%' }}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={4}>
+              <FormField label="Full Name" />
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <FormField label="Email Address" />
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <FormField label="Phone Number" />
+            </Grid>
+            <Grid item xs={12}>
+              <FormField label="Leave a comment" />
+            </Grid>
           </Grid>
-          <Grid item xs={12} md={4}>
-            <TextField fullWidth label="Email Address" variant="outlined" InputProps={{ style: { backgroundColor: 'white' } }} />
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <TextField fullWidth label="Phone Number" variant="outlined" InputProps={{ style: { backgroundColor: 'white' } }} />
-          </Grid>
-          <Grid item xs={12}>
-            <TextField fullWidth label="Leave a comment" variant="outlined" multiline rows={4} InputProps={{ style: { backgroundColor: 'white' } }} />
-          </Grid>
-        </Grid>
+        </Box>
+
         <Box textAlign="center" mt={4}>
           <Button variant="contained" size="large" sx={{ backgroundColor: '#747133', color: 'white' }}>
             SEND
           </Button>
         </Box>
-      </Container>
+      </Box>
     </Box>
   );
 }
