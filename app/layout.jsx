@@ -11,7 +11,7 @@ import Navbar from '../components/Navbar';
 export const metadata = {
     title: {
         template: '%s | Netlify',
-        default: 'Netlify Starter'
+        default: 'R&M Painting and Construction'
     }
 };
 
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <head>
-                <link rel="icon" href="/favicon.svg" sizes="any" />
+                <link rel="icon" href="/images/logo.png" sizes="any" />
             </head>
             <body>
                 <AppRouterCacheProvider>
