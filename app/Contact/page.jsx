@@ -6,12 +6,24 @@ import FormField from 'components/FormField';
 export default function Form() {
   return (
     <Box sx={{
-      backgroundImage: 'url("/R&M-Landingpage2.jpg")',
+      position: 'relative',
+      // backgroundImage: 'url("/R&M-Landingpage2.jpg")',
+      backgroundImage: 'url("/images/background.jpg")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       minHeight: '100vh',
+      '::before': {
+        content: '""',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        bgcolor: 'rgba(0,0,0,0.4)',
+        zIndex: 1,
+      },
     }}>
-      <Box sx={{ pt: 20, ml: 55, mr: 20 }}>
+      <Box sx={{ pt: 20, ml: 55, mr: 20, position: 'relative', zIndex: 2 }}>
         <Typography
           variant="h2"
           sx={{
