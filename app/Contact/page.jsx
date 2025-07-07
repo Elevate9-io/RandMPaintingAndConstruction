@@ -7,6 +7,12 @@ export default function Form() {
   return (
     <Box sx={{
       position: 'relative',
+      width: '100vw',
+      minWidth: 0,
+      left: '50%',
+      right: '50%',
+      marginLeft: '-50vw',
+      marginRight: '-50vw',
       backgroundImage: 'url("/images/background.jpg")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
