@@ -29,7 +29,7 @@ export default function Form() {
       },
     }}>
       <Box sx={{ pt: 20, ml: '20%', mr: '20%', position: 'relative', zIndex: 2 }}>
-        <Box sx={{ display: 'flex', ml: '32%' }}>
+        <Box>
           <Typography
             variant="h2"
             sx={{
@@ -63,7 +63,7 @@ export default function Form() {
           </Grid>
         </Box>
 
-        <Box textAlign="center" mt={4} sx={{ display: 'flex', alignContent: 'flex-start'}}>
+        <Box textAlign="center" mt={4}>
           <Button
             variant="contained"
             size="large"
@@ -73,8 +73,7 @@ export default function Form() {
               width: 220,
               height: '75px',
               borderRadius: '25px',
-              fontSize: '1.6rem',
-              marginLeft: '42%'
+              fontSize: '1.6rem'
             }}
           >
             SEND
