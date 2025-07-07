@@ -5,7 +5,7 @@ import TextField from '@mui/material/TextField';
 
 
 const FormField = styled(TextField)({
-  minWidth: '400px',
+  width: '100%',
   '& label': {
     color: 'white',
   },
