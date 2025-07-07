@@ -39,7 +39,7 @@ export default function Home() {
           boxSizing: 'border-box',
         }}
       >
-        <Box sx={{ width: '50%', pt: 10 }}>
+        <Box sx={{ width: '50%', pt: 10, pb: 10 }}>
           <Typography
             variant="h2"
             fontWeight="bold"
