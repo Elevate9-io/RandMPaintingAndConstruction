@@ -28,8 +28,8 @@ export default function Form() {
         zIndex: 1,
       },
     }}>
-      <Box sx={{ pt: 20, ml: '20%', mr: '10%', position: 'relative', zIndex: 2 }}>
-        <Box sx={{ display: 'flex', ml: '28%' }}>
+      <Box sx={{ pt: 20, ml: '20%', mr: '20%', position: 'relative', zIndex: 2 }}>
+        <Box sx={{ display: 'flex', ml: '32%' }}>
           <Typography
             variant="h2"
             sx={{
@@ -47,18 +47,18 @@ export default function Form() {
         </Box>
 
         <Box sx={{ width: '100%', pt: 7 }}>
-          <Grid container spacing={2}>
-            <Grid item xs={12} md={4}>
+          <Grid container spacing={2} alignItems='stretch'>
+            <Grid item size={{ xs:12, md: 4 }}>
               <FormField label="Full Name" />
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item size={{ xs:12, md: 4 }}>
               <FormField label="Email Address" />
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item size={{ xs:12, md: 4 }}>
               <FormField label="Phone Number" />
             </Grid>
-            <Grid item xs={12} md={12} sx={{ width: '100%' }}>
-              <FormField label="Leave a comment" sx={{ width: '87%' }} />
+            <Grid item size={{ xs:12, md: 12 }}>
+              <FormField label="Leave a comment" />
             </Grid>
           </Grid>
         </Box>
@@ -74,7 +74,7 @@ export default function Form() {
               height: '75px',
               borderRadius: '25px',
               fontSize: '1.6rem',
-              marginLeft: '36%'
+              marginLeft: '42%'
             }}
           >
             SEND
