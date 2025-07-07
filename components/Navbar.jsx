@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static" color="transparent" elevation={0}>
+    <AppBar position="fixed" color="transparent" elevation={0} sx={{ background: 'white' }}>
       <Toolbar sx={{ justifyContent: 'space-between', marginLeft: { md: '20%' }, marginRight: { md: '15%' }, px: { xs: 1, sm: 2 } }}>
         <Box component="img" src="/images/logo.png" alt="R&M Logo" sx={{ height: 64, margin: 2 }} />
         {/* Desktop Nav */}
