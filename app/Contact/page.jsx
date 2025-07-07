@@ -5,29 +5,30 @@ import FormField from 'components/FormField';
 
 export default function Form() {
   return (
-    <Box sx={{
-      position: 'relative',
-      width: '100vw',
-      minWidth: 0,
-      left: '50%',
-      right: '50%',
-      marginLeft: '-50vw',
-      marginRight: '-50vw',
-      backgroundImage: 'url("/images/background.jpg")',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      minHeight: '100vh',
-      '::before': {
-        content: '""',
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        bgcolor: 'rgba(0,0,0,0.4)',
-        zIndex: 1,
-      },
-    }}>
+    <Box sx={{ position: 'relative', width: '100%', minWidth: 0, minHeight: '100vh', overflow: 'hidden' }}>
+      <Box
+        sx={{
+          position: 'fixed',
+          top: { xs: '90px', sm: '90px' }, // offset for navbar height
+          left: 0,
+          width: '100vw',
+          height: '100vh',
+          backgroundImage: 'url("/images/background.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          zIndex: -1,
+          '::after': {
+            content: '""',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            bgcolor: 'rgba(0,0,0,0.4)',
+            zIndex: 1,
+          },
+        }}
+      />
       <Box sx={{ pt: 20, ml: '20%', mr: '20%', position: 'relative', zIndex: 2 }}>
         <Box>
           <Typography
