@@ -22,23 +22,25 @@ export default function Form() {
         zIndex: 1,
       },
     }}>
-      <Box sx={{ pt: 20, ml: 55, mr: 20, position: 'relative', zIndex: 2 }}>
-        <Typography
-          variant="h2"
-          sx={{
-            fontWeight: 'bold',
-            color: 'white',
-            textAlign: 'center',
-            mt: 19,
-            mb: 4,
-            whiteSpace: 'pre-line'
-          }}
-        >
-          {`Contact us to \n`}
-          {`build your future`}
-        </Typography>
+      <Box sx={{ pt: 20, ml: 57, mr: 20, position: 'relative', zIndex: 2 }}>
+        <Box sx={{ display: 'flex', ml: 50 }}>
+          <Typography
+            variant="h2"
+            sx={{
+              fontWeight: 'bold',
+              color: 'white',
+              textAlign: 'center',
+              mt: 19,
+              mb: 4,
+              whiteSpace: 'pre-line'
+            }}
+          >
+            {`Contact us to \n`}
+            {`build your future`}
+          </Typography>
+        </Box>
 
-        <Box sx={{ width: '100%' }}>
+        <Box sx={{ width: '100%', pt: 7 }}>
           <Grid container spacing={2}>
             <Grid item xs={12} md={4}>
               <FormField label="Full Name" />
@@ -50,13 +52,25 @@ export default function Form() {
               <FormField label="Phone Number" />
             </Grid>
             <Grid item xs={12} md={12} sx={{ width: '100%' }}>
-              <FormField label="Leave a comment" sx={{ width: '86%' }} />
+              <FormField label="Leave a comment" sx={{ width: '87%' }} />
             </Grid>
           </Grid>
         </Box>
 
-        <Box textAlign="center" mt={4}>
-          <Button variant="contained" size="large" sx={{ backgroundColor: '#747133', color: 'white' }}>
+        <Box textAlign="center" mt={4} sx={{ display: 'flex', alignContent: 'flex-start'}}>
+          <Button
+            variant="contained"
+            size="large"
+            sx={{
+              backgroundColor: '#747133',
+              color: 'white',
+              width: 220,
+              height: '75px',
+              borderRadius: '25px',
+              fontSize: '1.6rem',
+              marginLeft: 64
+            }}
+          >
             SEND
           </Button>
         </Box>
