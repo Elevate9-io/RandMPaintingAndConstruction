@@ -5,6 +5,12 @@ export default function Home() {
   return (
     <Box sx={{
       position: 'relative',
+      width: '100vw',
+      minWidth: 0,
+      left: '50%',
+      right: '50%',
+      marginLeft: '-50vw',
+      marginRight: '-50vw',
       backgroundImage: 'url("/images/background.jpg")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
@@ -20,7 +26,7 @@ export default function Home() {
         zIndex: 1,
       },
     }}>
-      <Container sx={{ color: 'white', maxWidth: '600px', pt: 20, marginLeft: 40, position: 'relative', zIndex: 2 }}>
+      <Container sx={{ color: 'white', maxWidth: '600px', pt: 20, marginLeft: '18%', position: 'relative', zIndex: 2 }}>
         <Typography variant="h2" fontWeight="bold" sx={{ marginTop: 20, whiteSpace: 'pre-line' }}>
           {'Painting & remodeling \n with craftsmanship \n you can trust'}
         </Typography>
