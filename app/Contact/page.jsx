@@ -22,8 +22,8 @@ export default function Form() {
         zIndex: 1,
       },
     }}>
-      <Box sx={{ pt: 20, ml: 57, mr: 20, position: 'relative', zIndex: 2 }}>
-        <Box sx={{ display: 'flex', ml: 50 }}>
+      <Box sx={{ pt: 20, ml: '20%', mr: '10%', position: 'relative', zIndex: 2 }}>
+        <Box sx={{ display: 'flex', ml: '28%' }}>
           <Typography
             variant="h2"
             sx={{
@@ -68,7 +68,7 @@ export default function Form() {
               height: '75px',
               borderRadius: '25px',
               fontSize: '1.6rem',
-              marginLeft: 64
+              marginLeft: '36%'
             }}
           >
             SEND
