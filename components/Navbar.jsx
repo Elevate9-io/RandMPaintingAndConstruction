@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <AppBar position="fixed" color="transparent" elevation={0} sx={{ background: 'white' }}>
       <Toolbar sx={{ justifyContent: 'space-between', marginLeft: { md: '20%' }, marginRight: { md: '15%' }, px: { xs: 1, sm: 2 } }}>
-        <Box component="img" src="/images/logo.png" alt="R&M Logo" sx={{ height: 64, margin: 2 }} />
+        <Box component="img" src="/images/logo.png" alt="R&M Logo" sx={{ height:50, margin: 2 }} />
         {/* Desktop Nav */}
         <Box sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'space-between', width: '35%' }}>
           {pages.map((page) => (
