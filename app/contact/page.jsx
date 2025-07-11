@@ -96,6 +96,7 @@ export default function Form() {
           <Button
             variant="contained"
             size="large"
+            onClick={handleSubmit}
             sx={{
               backgroundColor: '#747133',
               color: 'white',
@@ -107,6 +108,9 @@ export default function Form() {
           >
             SEND
           </Button>
+
+          {status === "success" && <Alert severity="success">Message sent!</Alert>}
+          {status === "error" && <Alert severity="error">Something went wrong.</Alert>}
         </Box>
       </Box>
     </Box>
