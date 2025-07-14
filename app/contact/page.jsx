@@ -86,10 +86,10 @@ export default function Form() {
               <FormField label="Full Name" name="name" />
             </Grid>
             <Grid size={{ xs:12, md: 4 }}>
-              <FormField label="Email Address" name="email" />
+              <FormField label="Email Address" name="email" type="email" />
             </Grid>
             <Grid size={{ xs:12, md: 4 }}>
-              <FormField label="Phone Number" name="phone" />
+              <FormField label="Phone Number" name="phone" type="tel" />
             </Grid>
             <Grid size={{ xs:12, md: 12 }}>
               <FormField label="Leave a comment" name="comment" />
