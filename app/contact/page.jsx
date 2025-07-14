@@ -58,7 +58,7 @@ export default function Form() {
           },
         }}
       />
-      <Box sx={{ pt: 20, ml: '20%', mr: '20%', position: 'relative', zIndex: 2 }}>
+      <Box component="form" sx={{ pt: 20, ml: '20%', mr: '20%', position: 'relative', zIndex: 2 }}>
         <Box>
           <Typography
             variant="h2"
@@ -95,9 +95,10 @@ export default function Form() {
 
         <Box textAlign="center" mt={4}>
           <Button
+            type="submit"
             variant="contained"
             size="large"
-            onClick={handleSubmit}
+            onSubmit={handleSubmit}
             sx={{
               backgroundColor: '#747133',
               color: 'white',
