@@ -16,8 +16,8 @@ export default function Form() {
     const payload = {
       name: data.get("name"),
       email: data.get("email"),
-      message: data.get("phone"),
-      message: data.get("comment"),
+      phone: data.get("phone"),
+      comment: data.get("comment"),
     };
 
     const res = await fetch("/.netlify/functions/send-email", {
@@ -58,7 +58,11 @@ export default function Form() {
           },
         }}
       />
-      <Box component="form" sx={{ pt: 20, ml: '20%', mr: '20%', position: 'relative', zIndex: 2 }}>
+      <Box
+        component="form"
+        sx={{ pt: 20, ml: '20%', mr: '20%', position: 'relative', zIndex: 2 }}
+        onSubmit={handleSubmit}
+      >
         <Box>
           <Typography
             variant="h2"
@@ -78,16 +82,16 @@ export default function Form() {
 
         <Box sx={{ width: '100%', pt: 7 }}>
           <Grid container spacing={2} alignItems='stretch'>
-            <Grid item size={{ xs:12, md: 4 }}>
+            <Grid size={{ xs:12, md: 4 }}>
               <FormField label="Full Name" name="name" />
             </Grid>
-            <Grid item size={{ xs:12, md: 4 }}>
+            <Grid size={{ xs:12, md: 4 }}>
               <FormField label="Email Address" name="email" />
             </Grid>
-            <Grid item size={{ xs:12, md: 4 }}>
+            <Grid size={{ xs:12, md: 4 }}>
               <FormField label="Phone Number" name="phone" />
             </Grid>
-            <Grid item size={{ xs:12, md: 12 }}>
+            <Grid size={{ xs:12, md: 12 }}>
               <FormField label="Leave a comment" name="comment" />
             </Grid>
           </Grid>
@@ -98,7 +102,6 @@ export default function Form() {
             type="submit"
             variant="contained"
             size="large"
-            onSubmit={handleSubmit}
             sx={{
               backgroundColor: '#747133',
               color: 'white',
