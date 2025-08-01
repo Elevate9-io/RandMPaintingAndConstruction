@@ -50,7 +50,7 @@ export default function Home() {
               lineHeight: 1.1,
             }}
           >
-            {'Painting & remodeling with craftsmanship you can trust'}
+            {'Painting & Remodeling with craftsmanship you can trust'}
           </Typography>
           <Typography
             variant="h5"
